@@ -1,0 +1,8 @@
+{
+  "name": "workflow",
+  "description": "Push and session commands — conventional commits and session logging.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Noah Dunnagan"
+  }
+}

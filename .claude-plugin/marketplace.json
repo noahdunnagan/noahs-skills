@@ -1,0 +1,30 @@
+{
+  "name": "noahs-skills",
+  "owner": {
+    "name": "Noah Dunnagan"
+  },
+  "metadata": {
+    "description": "Skills and commands for Claude Code",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "blueprint",
+      "source": "./plugins/blueprint",
+      "description": "How to approach any code change — structured planning that scales from quick features to large architecture.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Noah Dunnagan"
+      }
+    },
+    {
+      "name": "workflow",
+      "source": "./plugins/workflow",
+      "description": "Push and session commands — conventional commits and session logging.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Noah Dunnagan"
+      }
+    }
+  ]
+}

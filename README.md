@@ -1,45 +1,22 @@
 # noahs-skills
 
-Slash commands and skills for [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
+Skills and commands for [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
 
-## Commands
+## What's included
 
-| Command | Description |
-|---------|-------------|
-| `/push` | Generate a conventional commit message from your diffs, stage, and commit. |
-| `/session` | Summarize what you worked on into a `SESSION.md` log. |
-
-## Skills
-
-| Skill | Description |
-|-------|-------------|
-| `blueprint` | Structured planning workflow — discovery, requirements, solution design, self-critique, and sync before any code gets written. |
+| Plugin | Type | Description |
+|--------|------|-------------|
+| `blueprint` | Skill | Structured approach to any code change — scales from quick features to large architecture. |
+| `workflow` | Commands | `/push` for conventional commits, `/session` for session logging. |
 
 ## Install
 
-### Commands
+Add the marketplace and install what you want:
 
-Copy into `~/.claude/commands/` (global) or `.claude/commands/` (per-project).
-
-```bash
-cp commands/*.md ~/.claude/commands/
 ```
-
-### Skills
-
-Copy into `~/.claude/skills/` (global) or `.claude/skills/` (per-project).
-
-```bash
-cp -r skills/blueprint ~/.claude/skills/blueprint
-```
-
-### Or clone and symlink everything
-
-```bash
-git clone https://github.com/noahdunnagan/noahs-skills.git
-ln -s "$(pwd)/noahs-skills/commands/push.md" ~/.claude/commands/push.md
-ln -s "$(pwd)/noahs-skills/commands/session.md" ~/.claude/commands/session.md
-ln -s "$(pwd)/noahs-skills/skills/blueprint" ~/.claude/skills/blueprint
+/plugin marketplace add noahdunnagan/noahs-skills
+/plugin install blueprint@noahs-skills
+/plugin install workflow@noahs-skills
 ```
 
 ## License
