@@ -1,47 +1,59 @@
 ---
 name: blueprint
-description: Structured planning workflow. Runs discovery, requirements, solution design, self-critique, and sync before any code gets written.
-metadata:
-  trigger: Planning features, designing implementations, architecting changes
-  author: Noah Dunnagan (https://github.com/noahdunnagan)
+description: How to approach any code change — from quick features to large architecture. Activates whenever planning, implementing, or structuring work. Scales rigor to task size.
+user-invocable: true
+disable-model-invocation: false
 ---
 
-# /blueprint
+# Blueprint
 
-Follow these phases in order before writing any code.
+This is how you approach work. Not a ceremony — a disposition. These instincts apply to every change, scaled to fit.
 
 ## Rules (always active)
 
-- **Ask relentlessly.** If something is even slightly ambiguous, ask. If you think you know the answer but aren't 100% sure, ask. Use the question tool aggressively — err on the side of annoying me over assuming wrong. Nothing should be left to chance. The only dumb question is the one you didn't ask that led to a wrong assumption. Once I've answered, that answer is settled and you don't need to re-ask.
+- **Ask relentlessly.** If something is even slightly ambiguous, ask. If you think you know the answer but aren't 100% sure, ask. Err on the side of annoying me over assuming wrong. The only dumb question is the one you didn't ask that led to a wrong assumption. Once I've answered, that answer is settled.
 - **Delegate via subagents.** Break work into discrete tasks and hand them to subagents wherever possible to preserve context window quality. Each subagent task should be self-contained with clear inputs and expected outputs.
+- **Scale to the task.** A one-file feature doesn't need a formal 5-phase document. But it still needs the same thinking: understand first, know what "done" looks like, sanity-check yourself, then confirm before building. Use your judgment on how much structure to surface vs. internalize.
 
-## Phase 1 — Discovery
+## The Phases
 
-- **Background:** Gather and state the relevant context. What exists today? What's the current state of things?
-- **Problem:** Distill the core issue into a single clear paragraph. What's broken, missing, or insufficient?
+### 1 — Discovery
 
-## Phase 2 — Requirements
+Understand before you act.
 
-The "done" checklist. A flat list of what must be true for this work to ship. These are your acceptance criteria — every subsequent decision should trace back to one of these. Nothing more, nothing less.
+- **Background:** What exists today? Gather the relevant context.
+- **Problem:** What's broken, missing, or insufficient? One clear paragraph.
 
-## Phase 3 — Proposed Solution
+For small tasks this can be a few sentences. For large ones, be thorough.
 
-The implementation plan. Structured so any developer handed it cold could execute with zero guesswork:
+### 2 — Requirements
+
+The "done" checklist. What must be true for this work to ship? These are your acceptance criteria — every decision traces back to one of these. Nothing more, nothing less.
+
+For a quick feature, this might be 2-3 bullets. For a system redesign, it's a full list.
+
+### 3 — Proposed Solution
+
+The plan. Structured so anyone handed it cold could execute with zero guesswork:
 
 - Ordered steps with explicit inputs, outputs, and dependencies
-- File paths, function signatures, and data shapes specified where relevant
+- File paths, function signatures, and data shapes where relevant
 - No implicit knowledge or assumed context
 
-## Phase 4 — Self-Critique
+For small changes, this can be a brief outline. For large ones, be precise.
 
-Pressure-test the plan before presenting it:
+### 4 — Self-Critique
 
-- Is every step **in scope**? Cut anything not required by a requirement.
+Pressure-test before presenting:
+
+- Is every step **in scope**? Cut anything not tied to a requirement.
 - Is the ordering **logically sound**? Would any step fail because a dependency hasn't been met?
 - Are there **gaps**? Steps where a reader would need to fill in unstated details?
 
-Revise based on findings.
+Revise based on findings. For small tasks, do this internally. For large ones, show your work.
 
-## Phase 5 — Sync
+### 5 — Sync
 
-Give me the quick version — a casual, conversational summary of what you think we're building and why. Think "making sure we're on the same page" not "presenting a document." A few sentences max. Ask if anything's off. Don't start building until I confirm.
+Quick conversational check-in. A few sentences on what you think we're building and why. "Making sure we're on the same page" not "presenting a document." Ask if anything's off. Don't start building until I confirm.
+
+This step always happens out loud, regardless of task size.
