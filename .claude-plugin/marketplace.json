@@ -11,8 +11,8 @@
     {
       "name": "blueprint",
       "source": "./plugins/blueprint",
-      "description": "How to approach any code change — structured planning that scales from quick features to large architecture.",
-      "version": "1.0.0",
+      "description": "Three-mode planning system — always-active disposition, explicit blueprint generation (/blueprint), and blueprint execution.",
+      "version": "2.0.0",
       "author": {
         "name": "Noah Dunnagan"
       }

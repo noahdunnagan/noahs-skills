@@ -6,7 +6,7 @@ Skills and commands for [Claude Code](https://docs.anthropic.com/en/docs/claude-
 
 | Plugin | Type | Description |
 |--------|------|-------------|
-| `blueprint` | Skill | Structured approach to any code change — scales from quick features to large architecture. |
+| `blueprint` | Skill + Command | Three-mode planning — always-active disposition, `/blueprint` for generating requirements docs, and blueprint execution. |
 | `workflow` | Commands | `/push` for conventional commits, `/session` for session logging. |
 
 ## Install
