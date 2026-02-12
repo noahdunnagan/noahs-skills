@@ -1,5 +1,5 @@
 ---
-name: Generate blueprint
+name: Blueprint
 command: blueprint
 description: Generate a detailed requirements blueprint for a task. Produces ./blueprint.md — no code, just decisions.
 ---

@@ -12,7 +12,7 @@
       "name": "blueprint",
       "source": "./plugins/blueprint",
       "description": "Three-mode planning system — always-active disposition, explicit blueprint generation (/blueprint), and blueprint execution.",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "author": {
         "name": "Noah Dunnagan"
       }
