@@ -8,6 +8,7 @@ Skills and commands for [Claude Code](https://docs.anthropic.com/en/docs/claude-
 |--------|------|-------------|
 | `blueprint` | Skill + Command | Three-mode planning — always-active disposition, `/blueprint` for generating requirements docs, and blueprint execution. |
 | `workflow` | Commands | `/push` for conventional commits, `/session` for session logging. |
+| `rust-guide` | Skill | Opinionated Rust style guide — makes AI-written Rust code look like a human wrote it. |
 
 ## Install
 
@@ -17,6 +18,7 @@ Add the marketplace and install what you want:
 /plugin marketplace add noahdunnagan/noahs-skills
 /plugin install blueprint@noahs-skills
 /plugin install workflow@noahs-skills
+/plugin install rust-guide@noahs-skills
 ```
 
 ## License
