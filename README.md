@@ -1,4 +1,4 @@
-# noahs-skills
+# cafe
 
 Skills and commands for [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
 
@@ -16,11 +16,11 @@ Skills and commands for [Claude Code](https://docs.anthropic.com/en/docs/claude-
 Add the marketplace and install what you want:
 
 ```
-/plugin marketplace add noahdunnagan/noahs-skills
-/plugin install blueprint@noahs-skills
-/plugin install workflow@noahs-skills
-/plugin install rust-guide@noahs-skills
-/plugin install codex@noahs-skills
+/plugin marketplace add noahdunnagan/cafe
+/plugin install blueprint@cafe
+/plugin install workflow@cafe
+/plugin install rust-guide@cafe
+/plugin install codex@cafe
 ```
 
 ## License
