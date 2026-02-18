@@ -1,5 +1,5 @@
 {
-  "name": "noahs-skills",
+  "name": "cafe",
   "owner": {
     "name": "Noah Dunnagan"
   },
@@ -30,6 +30,15 @@
       "name": "rust-guide",
       "source": "./plugins/rust-guide",
       "description": "Opinionated Rust style guide — makes AI-written Rust code look like a human wrote it.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Noah Dunnagan"
+      }
+    },
+    {
+      "name": "codex",
+      "source": "./plugins/codex",
+      "description": "Delegate read-only research to Codex CLI using the fast codex-spark model.",
       "version": "1.0.0",
       "author": {
         "name": "Noah Dunnagan"
